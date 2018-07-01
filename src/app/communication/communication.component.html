@@ -1,0 +1,8 @@
+<div style="background: coral;  padding: 10px"> 
+  <!-- Below is example of Property Binding-->
+  <app-parent-to-child [name]='parentProperty'></app-parent-to-child>
+  <!-- Property Event Binding-->
+  <app-child-to-parent (valueChanged)='onValueChanged($event)'></app-child-to-parent>
+  Parent received value : <b> {{counter}}</b>
+</div>
+
